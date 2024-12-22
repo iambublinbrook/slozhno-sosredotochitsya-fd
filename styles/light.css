@@ -1,11 +1,6 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
   --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #fff1f7;
   --main-text-color: #353430;
   --accent-color: #ff8dcb;
   --decor-text-color: #353430;
@@ -22,6 +17,7 @@
 
   :root {
   --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #fff1f7;
   --main-text-color: #353430;
   --accent-color: #ff8dcb;
   --decor-text-color: #353430;

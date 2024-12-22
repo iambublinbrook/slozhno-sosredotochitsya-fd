@@ -9,7 +9,7 @@
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #000028;
+  background-color: var(--bg-color);
 }
 
 @media (min-width: 768px) {
