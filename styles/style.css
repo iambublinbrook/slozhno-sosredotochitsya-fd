@@ -1,17 +1,15 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   margin: 0 auto;
   padding: 0 10px;
   color: var(--main-text-color);
-  font-family: var(--main-font-family);
+  font-family: var(--main-font-family), sans-serif;
   font-size: var(--main-text-size);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  background-color: #000028;
 }
 
 @media (min-width: 768px) {
@@ -22,14 +20,26 @@
   }
 }
 
+.main {
+  display: grid;
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+
+  .main {
+    padding: 60px 0;
+  }
+}
+
 .shadow-text {
   color: var(--shadow-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 95.7px;
+  line-height: 82.5%;
 }
 
-@media (width >= 375px) {
+@media (min-width: 768px) {
   .shadow-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -37,46 +47,34 @@
 
 .title-decor {
   color: var(--decor-text-color);
+  font-size: var(--main-text-size);
+  line-height: 130%;
   background-color: var(--accent-color);
 }
 
-.heading {
-  margin: 0 0 20px;
-  color: var(--heading-color);
-  font-family: var(--main-font-family);
-  font-weight: 700;
-  font-size: var(--main-text-size);
-  line-height: 23.4px;
-}
-
-.heading__h3 {
-  font-weight: 700;
-  font-size: var(--main-text-size);
-}
-
-.heading__h4 {
-  font-weight: 400;
-  font-size: var(--main-text-size);
-  line-height: 23.4px;
-}
-
-.accent-link {
+.link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (any-hover: hover) {
 
-  .accent-link:hover {
-    color: var(--link-color);
-    text-decoration: underline;
+  .link:hover {
+    border-bottom: 1px solid currentColor;
     transition: color 0.1s linear;
   }
 }
 
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
 .paragraph-text {
-  margin: 10px 0 20px;
   font-size: var(--main-text-size);
-  line-height: 23.4px;
+  line-height: 130%;
 }
 
