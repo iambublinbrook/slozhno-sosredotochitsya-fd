@@ -39,7 +39,7 @@
   gap: 10px;
 }
 
-.section__title { 
+.section__title {
   color: var(--heading-color);
   font-weight: 700;
   font-size: var(--main-text-size);
